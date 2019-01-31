@@ -1,33 +1,85 @@
-html {
-  font-family: Helvetica;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-h1 {
-  background-image: url("../img/pattern.jpeg");
-  font-size: 100px;
-  color: khaki;
-  text-align: center;
+html, body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.7;
 }
 
-h2 {
-  font-size: 32px;
-  font-weight: bold;
-  color: white;
+/* Utility Classes */
+h1, h2, h3 {
+  color: whitesmoke;
 }
 
-#brushes h2{
-  background-color: mediumspringgreen;
+img {
+  border-radius: 5%;
 }
 
-#frames h2{
-  background-color: lightcoral;
-}
-
-#paint h2{
-  background-color: skyblue;
-}
-
-span {
-  font-weight: bold;
+.text-primary {
   color: purple;
+  font-weight: bold;
+}
+
+.m-heading {
+  background: coral;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 5px;
+}
+
+.m-heading-middle {
+  background: green;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 5px;
+}
+
+#main-header {
+  background: url('../img/pattern.jpeg') no-repeat center center/cover;
+  height: 30vh;
+  font-size: 3rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-header h1 {
+  position: absolute;
+  background: rgba(0,0,0,0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  text-shadow: -0.3rem 0.2rem 0.8rem lightcoral;
+}
+
+#items {
+  display: flex;
+  background: #cfcfcf;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1.2rem;
+}
+
+#items .item h3 {
+  color: rgb(40, 69, 153);
+  margin: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px dotted rgb(53, 53, 112);
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
 }
